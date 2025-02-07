@@ -27,9 +27,9 @@ const QuizPage = () => {
       try {
         const data = await fetchQuizData();
         console.log('Fetched Data:', data);
-
+  
         if (Array.isArray(data)) {
-          setQuizData({ questions: data });
+          setQuizData({ questions: shuffleArray(data) }); // Shuffle questions
         } else if (data && data.questions) {
           const shuffledQuestions = shuffleArray(data.questions).map(question => ({
             ...question,
@@ -43,9 +43,9 @@ const QuizPage = () => {
         console.error("Error fetching quiz data:", error);
       }
     };
-
+  
     loadQuizData();
-  }, []);
+  }, []); // Runs only on mount
 
   useEffect(() => {
     if (timeLeft === 0) {
