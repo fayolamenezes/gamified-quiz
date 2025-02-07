@@ -1,0 +1,47 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f4f7;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.timer {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.quiz-page, .result-page {
+  margin: 20px;
+}
+
+.options button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+}

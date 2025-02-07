@@ -1,0 +1,265 @@
+/* Base Styles */
+.quiz-page {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Soft light background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Deep shadow for depth */
+}
+
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6347; /* Tomato color for timer */
+    margin-bottom: 20px;
+}
+
+.progress-bar-container {
+    width: 80%;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    margin: 25px auto;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #5e92f3; /* Soft blue */
+    transition: width 0.5s ease-in-out;
+}
+
+/* Answer button styles */
+.answer-button {
+    padding: 18px 28px;
+    font-size: 18px;
+    margin: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ececec; /* Soft grey */
+    color: #333;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+/* Hover effect for the Answer button */
+.answer-button:hover {
+    background-color: #4CAF50; /* Vibrant green */
+    color: white;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
+/* Selected answer */
+.answer-button.selected {
+    background-color: #cce5ff; /* Soft blue backlight */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Blue shadow */
+    color: #0056b3; /* Dark blue text */
+}
+
+/* Correct answer */
+.answer-button.correct {
+    background-color: #d4edda; /* Soft green backlight */
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3); /* Green shadow */
+    color: #28a745; /* Green text */
+}
+
+/* Disabled state for the Answer button */
+.answer-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Score Section Styling */
+.score-section {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Next button styling */
+.next-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px; /* Reduce margin to move it up */
+  margin-right: 10px;
+  position: relative;
+  top: -10px; /* Moves the button 10px higher */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the Next button */
+.next-button:hover {
+    background-color: #45a049; /* Slightly darker green */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* General shadow for components */
+.quiz-page, .timer, .progress-bar-container, .score-section, .next-button {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08); /* Softer, more refined shadow */
+}
+
+/* Style for the Skip button */
+.skip-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px; /* Reduce margin to move it up */
+  margin-left: 10px;
+  position: relative;
+  top: -10px; /* Moves the button 10px higher */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Hover effect for the Skip button */
+.skip-button:hover {
+    background-color: #d44b34; /* Darker red on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 6px 18px rgba(255, 99, 71, 0.2); /* Red shadow */
+}
+
+/* Focus effect for Skip button */
+.skip-button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5); /* Glowing effect */
+}
+
+/* Disabled state for Skip button */
+.skip-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Add transition effect for background color change */
+body {
+  transition: background-color 1s ease-in-out;
+}
+.text-to-speech-button {
+  background-color: #007bfd;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+
+.text-to-speech-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.text-to-speech-button:active {
+  background-color: #004494;
+  transform: scale(0.98);
+}
+
+.text-to-speech-button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.text-to-speech-button .speaker-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust layout for tablets and smaller screens */
+  .quiz-page {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .timer {
+    font-size: 18px;
+  }
+
+  .progress-bar-container {
+    width: 100%;
+  }
+
+  .progress-bar {
+    height: 10px;
+  }
+
+  .answer-button {
+    padding: 15px 25px;
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .score-section {
+    font-size: 20px;
+  }
+
+  .next-button, .skip-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .skip-button {
+    width: 100%; /* Make skip button full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust layout for mobile screens */
+  .quiz-page {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .timer {
+    font-size: 16px;
+  }
+
+  .answer-button {
+    padding: 12px 22px;
+    font-size: 14px;
+    margin: 8px;
+  }
+
+  .score-section {
+    font-size: 18px;
+  }
+
+  .next-button, .skip-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .skip-button {
+    width: 100%; /* Full width on mobile */
+  }
+}
