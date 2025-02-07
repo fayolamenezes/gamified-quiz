@@ -45,6 +45,8 @@ Ensure the API is properly configured and accessible.
 
 ## Screenshots & Video Walkthrough
 https://drive.google.com/drive/folders/1cANwvVu0BhDYz5U2UYgucZ4G6ebp6oDN?usp=sharing
+### Video Playback Notice  
+The video file may take longer than expected to process for online playback. If you experience issues, please download the file and watch it offline.
 
 ## Usage
 1. Open the app and start the quiz.
