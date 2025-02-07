@@ -1,74 +1,53 @@
-HEAD
-# gamified-quiz
+# Gamified Quiz App
 
-# Getting Started with Create React App
+## Overview
+The Gamified Quiz App is a React-based application that fetches quiz questions from an API and presents them to users. It includes a timed quiz with interactive answer selection, scoring, and a results page.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- Fetches quiz questions dynamically from an API.
+- Timer-based questions.
+- Randomized question and answer order.
+- Speech synthesis for text-to-speech functionality.
+- Color-coded answer feedback with sound effect(green for correct, red for incorrect).
+- Skipping questions and moving to the next.
+- Progress bar indicating quiz completion.
+- Responsive UI with smooth transitions.
 
-## Available Scripts
+## Technologies Used
+- React
+- React Router
+- JavaScript (ES6+)
+- CSS (for styling)
+- Fetch API (for data retrieval)
 
-In the project directory, you can run:
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/fayolamenezes/quiz-app.git
+   cd quiz-app
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm start
+   ```
+   The app will be available at `http://localhost:3000`.
 
-### `npm start`
+## API Endpoint
+The quiz data is fetched from an API endpoint using:
+```js
+const response = await fetch('/Uw5CrX');
+```
+Ensure the API is properly configured and accessible.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots & Video Walkthrough
+https://drive.google.com/drive/folders/1cANwvVu0BhDYz5U2UYgucZ4G6ebp6oDN?usp=sharing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-26b1c3b (Initial commit)
+## Usage
+1. Open the app and start the quiz.
+2. Select an answer for each question within the given time limit.
+3. Skip a question if needed.
+4. View the final score on the results page.
